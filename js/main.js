@@ -36,8 +36,8 @@ const buttonCheckCalendarOut = document.querySelector('.fa-address-book-o-out')
 const calendarIn = document.querySelector('.calendar-check-in')
 const calendarOut = document.querySelector('.calendar-check-out')
 
-buttonCheckCalendarIn && buttonCheckCalendarIn.addEventListener('click', (e) => showCalendarIn(e));
-buttonCheckCalendarOut && buttonCheckCalendarOut.addEventListener('click', (e) => showCalendarOut(e));
+buttonCheckCalendarIn?.addEventListener('click', (e) => showCalendarIn(e));
+buttonCheckCalendarOut?.addEventListener('click', (e) => showCalendarOut(e));
 
 
 function showCalendarIn(e) {
@@ -68,15 +68,28 @@ function changeInputColor(target) {
   nextEl.classList.toggle('white')
 }
 
-let menuBtn = document.querySelector('.menu__btn');
-let menu = document.querySelector('.menu');
 
-menuBtn.addEventListener('click', function () {
-  menuBtn.classList.toggle('active');
-  menu.classList.toggle('active');
+
+const body = document.querySelector('body')
+const menuBtn = document.querySelector('.menu__btn');
+const menuList = document.querySelector('.menu__list');
+console.log(menuList)
+
+body?.addEventListener('click', ()=> {
+  console.log("remove")
+  menuBtn?.classList.remove('menu__btn--active')
+  menuList?.classList.remove('menu__list--active')
 })
 
-$('.menu__btn').on('click', function () {
-  $('.menu__list').toggleClass('menu__list--active');
-  $('.menu__btn').toggleClass('menu__btn--active');
-});
+menuList && menuBtn?.addEventListener('click', (e)=> {
+  console.log("toggle")
+    e.stopPropagation()
+    menuBtn.classList.toggle('menu__btn--active');
+    menuList.classList.toggle('menu__list--active');
+  })
+
+
+// $('.menu__btn').on('click', function () {
+//   $('.menu__list').toggleClass('menu__list--active');
+//   $('.menu__btn').toggleClass('menu__btn--active');
+// });

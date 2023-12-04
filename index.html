@@ -4,228 +4,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+
 
     <title>Hytte</title>
 </head>
 
 <body>
     <header class="header">
-        <h1 style="display: none">Hytte</h1>
         <div class="container">
+            
+            <div class="header__wrapper">
+                <h1 style="display: none">Hytte</h1>
+                <div class="header__logo">
+                    <a class="logo" href="index.html">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                </div>
 
-            <div class="header__fon">
-                <a class="logo" href="index.html">
-                    <img src="images/logo.svg" alt="logo">
-                </a>
-                <div class="navbar navbar-expand-lg menu header__inner">
-                    <nav>
+                <!-- top menu -->
+                <div class="header__navbar">
+                    <!-- menu -->
+                    <div class="menu">
                         <button class="menu__btn">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </button>
-                        <ul class="navbar-nav menu__list">
-                            <li class="nav-item menu__item">
-                                <a class="nav-link menu__link" href="#">Hytte</a>
+                    </button>
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Hytte</a>
                             </li>
-                            <li class="nav-item menu__item">
-                                <a class="nav-link menu__link" href="#">Options</a>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Options</a>
                             </li>
-                            <li class="nav-item menu__item">
-                                <a class="nav-link menu__link" href="#">Book</a>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Book</a>
                             </li>
-                            <li class="nav-item menu__item">
-                                <a class="nav-link menu__link" href="#">App</a>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">App</a>
                             </li>
                         </ul>
                     </nav>
-                    <div class="header__social">
-                        <a class="header__social-link" href="#">
-                            <img src="images/instagram.svg" alt="instagram">
-                        </a>
-                        <a class="header__social-link" href="#">
-                            <img src="images/youtube.svg" alt="youtube">
-                        </a>
-                        <a class="header__social-link" href="#">
-                            <img src="images/tiktok.svg" alt="tiktok">
-                        </a>
-                    </div>
+                 </div>
+                 <!-- <div class="header__social"> -->
+                     <ul class=" header__social social">
+                         <li class="social__item">
+                             <a class="social__link" href="#">
+                                 <img class="social__icon" src="images/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__icon" src="images/youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__icon" src="images/tiktok.svg" alt="tiktok">
+                                </a>
+                            </li>
+                        </ul>
+                    <!-- </div> -->
                 </div>
                 <p class="header__text">
                     Originally, a hytte was a very basic log cabin with no running water or electricity.
                     Plenty of these still exist especially up in the mountains and along cross-country skiing trails.
                     But today, hytte also refers to a wooden holiday cottage.
                 </p>
+              
             </div>
         </div>
     </header>
     <main class="main">
         <section class="options">
             <div class="container-sm">
-                <div class="options__top top">
-                    <a class="logo-mimi" href="index.html">
-                        <img src="images/logo_mimi.svg" alt="logo">
-                    </a>
-                    <h2 class="options__title title">
-                        Options
-                    </h2>
-                    <p class="options__subtitle subtitle">
-                        217 perfect options
-                    </p>
+                <div class="options__wrapper">
+                    <div class="block-title">
+                        <div class="block-title__logo">
+                            <a class="logo-mimi" href="index.html">
+                                <img class="logo-mimi__img" src="images/logo_mini.svg" alt="logo">
+                            </a>
+                        </div>
+                        <h2 class="block-title__title">
+                            Options
+                        </h2>
+                        <p class="block-title__subtitle">
+                            217 perfect options
+                        </p>
+                    </div>
+                    <div class="options__cards">
+                        <ul class="cards">
+                            <li class="card">
+                                <a class="card__img" href="#">
+                                    <img src="images/options_1.svg" alt="options item img">
+                                </a>
+                                <div class="card__content">
+                                    <div class="card__content-top">
+                                        <h3 class="card__content-title">
+                                            NEST Bunnefjorden - Mirrored Glass Cabin
+                                        </h3>
+                                        <div class="card__content-price">
+                                            $424<span>/night</span>
+                                        </div>
+                                    </div>
+                                    <p class="card__content-location">
+                                        Frogn, Viken, Norway
+                                    </p>
+                                    <div class="card__content-tabs">
+                                        <button class="card__content-tab card__content-tab_guests">
+                                            4 guests
+                                        </button>
+                                        <button class="card__content-tab card__content-tab_bedrooms">
+                                            2 bedrooms
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a class="card__img" href="#">
+                                    <img src="images/options_2.svg" alt="options item img">
+                                </a>
+                                <div class="card__content">
+                                    <div class="card__content-top">
+                                        <h3 class="card__content-title">
+                                            Sjulstad, Numedalslågen
+                                        </h3>
+                                        <button class="card__content-price">
+                                            $367<span>/night</span>
+                                        </button>
+                                    </div>
+                                    <p class="card__content-location">
+                                        Larvik, Vestfold, Norway
+                                    </p>
+                                    <div class="card__content-tabs">
+                                        <button class="card__content-tab card__content-tab_guests">
+                                            2 guests
+                                        </button>
+                                        <button class="card__content-tab card__content-tab_bedrooms">
+                                            1 bedrooms
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a class="card__img" href="#">
+                                    <img src="images/options_3.svg" alt="options item img">
+                                </a>
+                                <div class="card__content">
+                                    <div class="card__content-top">
+                                        <h3 class="card__content-title">
+                                            Relax, rejuvenate and unplug in Birdbox Tokke
+                                        </h3>
+                                        <button class="card__content-price">
+                                            $344<span>/night</span>
+                                        </button>
+                                    </div>
+                                    <p class="card__content-location">
+                                        Tokke, Vestfold og Telemark, Norway
+                                    </p>
+                                    <div class="card__content-tabs">
+                                        <button class="card__content-tab card__content-tab_guests">
+                                            2 guests
+                                        </button>
+                                        <button class="card__content-tab card__content-tab_bedrooms">
+                                            1 bedrooms
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a class="card__img" href="#">
+                                    <img src="images/options_4.svg" alt="options item img">
+                                </a>
+                                <div class="card__content">
+                                    <div class="card__content-top">
+                                        <h3 class="card__content-title">
+                                            The WonderInn Riverside Retreat - Cabin Koti </h3>
+                                        <button class="card__content-price">
+                                            $388<span>/night</span>
+                                        </button>
+                                    </div>
+                                    <p class="card__content-location">
+                                        Nes, Viken, Norway
+                                    </p>
+                                    <div class="card__content-tabs">
+                                        <button class="card__content-tab card__content-tab_guests">
+                                            2 guests
+                                        </button>
+                                        <button class="card__content-tab card__content-tab_bedrooms">
+                                            1 bedrooms
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a class="card__img" href="#">
+                                    <img src="images/options_5.svg" alt="options item img">
+                                </a>
+                                <div class="card__content">
+                                    <div class="card__content-top">
+                                        <h3 class="card__content-title">
+                                            Breathtaking Mountain views in cozy Birdbox </h3>
+                                        <button class="card__content-price">
+                                            $391<span>/night</span>
+                                        </button>
+                                    </div>
+                                    <p class="card__content-location">
+                                        Gaular, Sogn og Fjordane, Norway
+                                    </p>
+                                    <div class="card__content-tabs">
+                                        <button class="card__content-tab card__content-tab_guests">
+                                            2 guests
+                                        </button>
+                                        <button class="card__content-tab card__content-tab_bedrooms">
+                                            1 bedrooms
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="options__items">
-                    <li class="options__item">
-                        <a class="options__item-img" href="#">
-                            <img src="images/header_fon.png" alt="options item img">
-                        </a>
-                        <div class="options__item-box">
-                            <div class="options__item-box__top">
-                                <h3 class="options__item-title">
-                                    NEST Bunnefjorden - Mirrored Glass Cabin
-                                </h3>
-                                <button class="options__item-price">
-                                    $424<span>/night</span>
-                                </button>
-                            </div>
-                            <p class="options__item-text">
-                                Frogn, Viken, Norway
-                            </p>
-                            <div class="options__item-box__tabs">
-                                <button class="options__item-tabs options__item-guests">
-                                    4 guests
-                                </button>
-                                <button class="options__item-tabs options__item-bedrooms">
-                                    2 bedrooms
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="options__item">
-                        <a class="options__item-img" href="#">
-                            <img src="images/options_2.svg" alt="options item img">
-                        </a>
-                        <div class="options__item-box">
-                            <div class="options__item-box__top">
-                                <h3 class="options__item-title">
-                                    Sjulstad, Numedalslågen
-                                </h3>
-                                <button class="options__item-price">
-                                    $367<span>/night</span>
-                                </button>
-                            </div>
-                            <p class="options__item-text">
-                                Larvik, Vestfold, Norway
-                            </p>
-                            <div class="options__item-box__tabs">
-                                <button class="options__item-tabs options__item-guests">
-                                    2 guests
-                                </button>
-                                <button class="options__item-tabs options__item-bedrooms">
-                                    1 bedrooms
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="options__item">
-                        <a class="options__item-img" href="#">
-                            <img src="images/options_3.svg" alt="options item img">
-                        </a>
-                        <div class="options__item-box">
-                            <div class="options__item-box__top">
-                                <h3 class="options__item-title">
-                                    Relax, rejuvenate and unplug in Birdbox Tokke
-                                </h3>
-                                <button class="options__item-price">
-                                    $344<span>/night</span>
-                                </button>
-                            </div>
-                            <p class="options__item-text">
-                                Tokke, Vestfold og Telemark, Norway
-                            </p>
-                            <div class="options__item-box__tabs">
-                                <button class="options__item-tabs options__item-guests">
-                                    2 guests
-                                </button>
-                                <button class="options__item-tabs options__item-bedrooms">
-                                    1 bedrooms
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="options__item">
-                        <a class="options__item-img" href="#">
-                            <img src="images/options_4.svg" alt="options item img">
-                        </a>
-                        <div class="options__item-box">
-                            <div class="options__item-box__top">
-                                <h3 class="options__item-title">
-                                    The WonderInn Riverside Retreat - Cabin Koti </h3>
-                                <button class="options__item-price">
-                                    $388<span>/night</span>
-                                </button>
-                            </div>
-                            <p class="options__item-text">
-                                Nes, Viken, Norway
-                            </p>
-                            <div class="options__item-box__tabs">
-                                <button class="options__item-tabs options__item-guests">
-                                    2 guests
-                                </button>
-                                <button class="options__item-tabs options__item-bedrooms">
-                                    1 bedrooms
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="options__item">
-                        <a class="options__item-img" href="#">
-                            <img src="images/options_5.svg" alt="options item img">
-                        </a>
-                        <div class="options__item-box">
-                            <div class="options__item-box__top">
-                                <h4 class="options__item-title">
-                                    Breathtaking Mountain views in cozy Birdbox </h4>
-                                <button class="options__item-price">
-                                    $391<span>/night</span>
-                                </button>
-                            </div>
-                            <p class="options__item-text">
-                                Gaular, Sogn og Fjordane, Norway
-                            </p>
-                            <div class="options__item-box__tabs">
-                                <button class="options__item-tabs options__item-guests">
-                                    2 guests
-                                </button>
-                                <button class="options__item-tabs options__item-bedrooms">
-                                    1 bedrooms
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+           
             </div>
         </section>
         <section class="book-hytte">
             <div class="container-sm">
-                <div class="top">
-                    <a class="logo-mimi" href="index.html">
-                        <img src="images/logo_mimi.svg" alt="logo">
+                <div class="block-title">
+                    <a class="block-title__logo logo-mimi" href="index.html">
+                        <img src="images/logo_mini.svg" alt="logo">
                     </a>
-                    <h2 class="title ">
+                    <h2 class="block-title__title">
                         Book Hytte
                     </h2>
-                    <h3 class="subtitle">
+                    <p class="block-title__subtitle">
                         Book a Hytte in Norway
-                    </h3>
+                    </p>
                 </div>
                 <picture id="picture">
                     <source class="book-hytte__img" media="(max-width: 500px)"
@@ -271,6 +297,19 @@
                 </form>
             </div>
 
+        </section>
+        <section class="app">
+            <div class="container-sm">
+                <div class="block-title">
+                    <h2 class="block-title__title">
+                        Hytte App
+                    </h2>
+                    <p class="block-title__subtitle">
+                        iOS & Android
+                    </p>
+                </div>
+                
+            </div>
         </section>
     </main>
     <script src="./js/main.js"></script>
