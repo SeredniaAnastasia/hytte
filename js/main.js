@@ -41,6 +41,7 @@ buttonCheckCalendarOut?.addEventListener('click', (e) => showCalendarOut(e));
 
 
 function showCalendarIn(e) {
+  e.stopPropagation()
   changeInputColor(e.target)
   console.log('dfdg')
   $('.calendar-check-in').toggleClass('active');
@@ -53,6 +54,7 @@ function showCalendarIn(e) {
 }
 
 function showCalendarOut(e) {
+  e.stopPropagation()
   changeInputColor(e.target)
   $('.calendar-check-out').toggleClass('active');
   if (calendarOut.classList.contains('active')) {
@@ -75,10 +77,17 @@ const menuBtn = document.querySelector('.menu__btn');
 const menuList = document.querySelector('.menu__list');
 console.log(menuList)
 
-body?.addEventListener('click', ()=> {
-  console.log("remove")
+body?.addEventListener('click', (e)=> {
+  console.log(e.target)
   menuBtn?.classList.remove('menu__btn--active')
   menuList?.classList.remove('menu__list--active')
+  body.classList.remove('overflow-hidden');
+  if(!e.target.closest('.fc-toolbar')){
+    $('.calendar-check-in').slideUp('slow'); // Анімація схову
+    $('.calendar-check-out').slideUp('slow'); // Анімація схову
+    $('.calendar-check-out').removeClass('active');
+    $('.calendar-check-in').removeClass('active');
+  }
 })
 
 menuList && menuBtn?.addEventListener('click', (e)=> {
@@ -86,6 +95,7 @@ menuList && menuBtn?.addEventListener('click', (e)=> {
     e.stopPropagation()
     menuBtn.classList.toggle('menu__btn--active');
     menuList.classList.toggle('menu__list--active');
+    body.classList.toggle('overflow-hidden');
   })
 
 

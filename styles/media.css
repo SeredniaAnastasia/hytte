@@ -14,7 +14,7 @@
          height: 150px;
          border-radius: 30px;
          margin-top: -135px;
-         grid-template-columns: repeat(3, auto);
+         grid-template-columns: repeat(3, 1fr);
          fill: rgba(255, 255, 255, 0.80);
          stroke-width: 1.218px;
          stroke: #FFF;
@@ -44,18 +44,6 @@
          left: 395px;
      }
 
-     .form__input-guests {
-         width: 300px;
-     }
-
-     .form__input-location {
-         width: 300px;
-     }
-
-     .form__input-calendar {
-         width: 300px;
-     }
-
      .flex-order_1 {
          order: -2;
      }
@@ -69,7 +57,11 @@
      }
 
  }
-
+ @media (max-width: 992px){
+    .header__text {
+        left: calc(50% - 255px);
+    }
+ }
 
  @media (max-width: 768px) {
     .menu {
@@ -93,6 +85,8 @@
     .menu__list {
         position: fixed;
         display: block;
+        max-height: 65.2vh;
+        overflow: auto;
         width: calc(100% - 30px);
         background-color: #fff;
         z-index: 2;
@@ -171,11 +165,11 @@
 
      .calendar-check-out {
          left: 225px;
-         bottom: 200px;
+         bottom: 155px;
      }
 
      .calendar-check-in {
-         bottom: 200px;
+         bottom: 155px;
          left: 219px;
      }
  }
@@ -225,7 +219,9 @@
  }
 
  @media (max-width: 500px) {
-    
+    .header__logo {
+        left: 38px;
+    }
      .header__wrapper {
          background-image: url('../images/bg_fon-phone.png');
          min-height: 788px;
@@ -266,10 +262,10 @@
 
 
  @media (max-width: 450px) {
-     .calendar {
+     /* .calendar {
          max-width: 355px;
          width: 280px;
-     }
+     } */
 
 
  }
