@@ -13,6 +13,7 @@
   flex-direction: column;
 }
 
+
 .card__img {
   display: block;
   width: 190px;
@@ -20,6 +21,7 @@
   margin-bottom: 7px;
   transition: filter 0.2s ease-in;
   border: 2px solid transparent;
+
 }
 
 .card__img:focus {
